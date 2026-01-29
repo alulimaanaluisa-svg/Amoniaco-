@@ -1,0 +1,1648 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amoniaco: Evolución Histórica del Proceso de Producción</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600&family=IBM+Plex+Mono:wght@400;500&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --azul-petroleo: #1F3A44;
+            --azul-grisaceo: #4F6D7A;
+            --gris-claro: #F2F4F6;
+            --blanco: #FFFFFF;
+            --mostaza: #D4A373;
+            --verde-menta: #A8DADC;
+            --coral-suave: #F28482;
+            --lavanda: #B8B8D1;
+            --verde-salvia: #9CAF88;
+            --azul-cielo: #457B9D;
+            --salmon: #F4A261;
+            --sombra-suave: 0 4px 12px rgba(31, 58, 68, 0.08);
+            --sombra-media: 0 8px 24px rgba(31, 58, 68, 0.12);
+            --sombra-color: 0 6px 20px rgba(168, 218, 220, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Crimson Pro', serif;
+            background: linear-gradient(135deg, #F2F4F6 0%, #E8ECEF 100%);
+            color: var(--azul-petroleo);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* Header fijo con gradiente */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, var(--blanco) 0%, #F8FAFB 100%);
+            border-bottom: 3px solid transparent;
+            border-image: linear-gradient(90deg, var(--azul-petroleo), var(--verde-menta), var(--mostaza)) 1;
+            z-index: 1000;
+            box-shadow: var(--sombra-media);
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .header-title {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        h1 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--azul-petroleo) 0%, var(--azul-cielo) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            font-size: 0.95rem;
+            color: var(--azul-grisaceo);
+            margin-top: 0.3rem;
+            font-weight: 300;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--azul-grisaceo);
+            font-size: 0.95rem;
+            font-weight: 400;
+            transition: all 0.3s ease;
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            position: relative;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--mostaza), var(--salmon));
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        nav a:hover {
+            color: var(--azul-petroleo);
+            background: rgba(168, 218, 220, 0.1);
+        }
+
+        nav a:hover::after {
+            width: 80%;
+        }
+
+        /* Contenedor principal */
+        main {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 140px 2rem 4rem;
+        }
+
+        section {
+            background: linear-gradient(135deg, var(--blanco) 0%, #FAFBFC 100%);
+            padding: 3rem;
+            margin-bottom: 2.5rem;
+            border-radius: 12px;
+            box-shadow: var(--sombra-suave);
+            scroll-margin-top: 120px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(168, 218, 220, 0.2);
+        }
+
+        section:hover {
+            box-shadow: var(--sombra-color);
+            transform: translateY(-2px);
+        }
+
+        h2 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 2rem;
+            background: linear-gradient(135deg, var(--azul-petroleo) 0%, var(--azul-cielo) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 3px solid transparent;
+            border-image: linear-gradient(90deg, var(--mostaza), var(--salmon), var(--verde-menta)) 1;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 1.4rem;
+            color: var(--azul-petroleo);
+            margin: 2rem 0 1rem;
+            font-weight: 600;
+        }
+
+        h4 {
+            font-size: 1.15rem;
+            color: var(--azul-grisaceo);
+            margin: 1.5rem 0 0.8rem;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+            font-size: 1.05rem;
+        }
+
+        .formula-display {
+            background: linear-gradient(135deg, #F0F7F8 0%, #E8F4F5 100%);
+            padding: 1.5rem;
+            border-radius: 8px;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 1.3rem;
+            text-align: center;
+            margin: 1.5rem 0;
+            border-left: 4px solid var(--verde-menta);
+            color: var(--azul-petroleo);
+            font-weight: 500;
+            box-shadow: var(--sombra-suave);
+        }
+
+        /* Tarjetas interactivas con colores */
+        .properties-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .property-card {
+            background: linear-gradient(135deg, var(--blanco) 0%, #F8FAFB 100%);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border: 2px solid transparent;
+            transition: all 0.4s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .property-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--verde-menta), var(--lavanda));
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        .property-card:nth-child(2)::before {
+            background: linear-gradient(90deg, var(--coral-suave), var(--salmon));
+        }
+
+        .property-card:nth-child(3)::before {
+            background: linear-gradient(90deg, var(--verde-salvia), var(--verde-menta));
+        }
+
+        .property-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .property-card:hover {
+            border-color: var(--verde-menta);
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(168, 218, 220, 0.3);
+        }
+
+        .property-card h4 {
+            color: var(--azul-petroleo);
+            margin-top: 0;
+        }
+
+        .property-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .property-card li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            font-size: 0.98rem;
+        }
+
+        .property-card li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--verde-menta);
+            font-weight: bold;
+        }
+
+        .property-card:nth-child(2) li::before {
+            color: var(--coral-suave);
+        }
+
+        .property-card:nth-child(3) li::before {
+            color: var(--verde-salvia);
+        }
+
+        /* Tabla de propiedades técnicas */
+        .tech-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: var(--blanco);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--sombra-suave);
+        }
+
+        .tech-table th {
+            background: linear-gradient(135deg, var(--azul-petroleo) 0%, var(--azul-cielo) 100%);
+            color: var(--blanco);
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .tech-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--gris-claro);
+            font-size: 1rem;
+        }
+
+        .tech-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .tech-table tr:hover {
+            background: linear-gradient(90deg, rgba(168, 218, 220, 0.1) 0%, rgba(184, 184, 209, 0.1) 100%);
+        }
+
+        /* Proceso histórico */
+        .proceso-historico {
+            margin: 2rem 0;
+            padding: 2rem;
+            background: linear-gradient(135deg, #F8FAFB 0%, var(--gris-claro) 100%);
+            border-radius: 12px;
+            border-left: 6px solid var(--azul-petroleo);
+            box-shadow: var(--sombra-suave);
+        }
+
+        .proceso-historico:nth-child(2) {
+            border-left-color: var(--verde-menta);
+        }
+
+        .proceso-historico:nth-child(3) {
+            border-left-color: var(--coral-suave);
+        }
+
+        .proceso-historico:nth-child(4) {
+            border-left-color: var(--lavanda);
+        }
+
+        .proceso-historico:nth-child(5) {
+            border-left-color: var(--verde-salvia);
+        }
+
+        .proceso-historico:nth-child(6) {
+            border-left-color: var(--salmon);
+        }
+
+        .proceso-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            padding: 1.2rem;
+            background: var(--blanco);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .proceso-header:hover {
+            background: linear-gradient(135deg, var(--azul-petroleo) 0%, var(--azul-cielo) 100%);
+            color: var(--blanco);
+            transform: translateX(5px);
+        }
+
+        .proceso-header h3 {
+            margin: 0;
+            transition: color 0.3s ease;
+        }
+
+        .proceso-header:hover h3 {
+            color: var(--blanco);
+        }
+
+        .toggle-btn {
+            font-size: 1.5rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            background: var(--verde-menta);
+            color: var(--azul-petroleo);
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .proceso-header:hover .toggle-btn {
+            background: var(--mostaza);
+            color: var(--blanco);
+            transform: rotate(180deg);
+        }
+
+        .proceso-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+        }
+
+        .proceso-content.active {
+            max-height: 5000px;
+        }
+
+        .proceso-details {
+            padding: 1.5rem;
+            background: var(--blanco);
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+
+        .reaccion-box {
+            background: linear-gradient(135deg, var(--azul-petroleo) 0%, var(--azul-cielo) 100%);
+            color: var(--blanco);
+            padding: 1.5rem;
+            border-radius: 8px;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 1.1rem;
+            text-align: center;
+            margin: 1.5rem 0;
+            box-shadow: 0 6px 20px rgba(69, 123, 157, 0.3);
+        }
+
+        .operaciones-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .operacion-item {
+            background: linear-gradient(135deg, var(--verde-menta) 0%, #C8E7E9 100%);
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 500;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            color: var(--azul-petroleo);
+        }
+
+        .operacion-item:hover {
+            border-color: var(--azul-cielo);
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(168, 218, 220, 0.4);
+        }
+
+        /* Diagrama de flujo mejorado */
+        .diagrama-container {
+            background: linear-gradient(135deg, #F8FAFB 0%, var(--gris-claro) 100%);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border: 2px solid var(--verde-menta);
+            box-shadow: var(--sombra-color);
+        }
+
+        .diagrama-container h4 {
+            text-align: center;
+            color: var(--azul-petroleo);
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+        }
+
+        .diagrama-img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: var(--sombra-suave);
+        }
+
+        /* Balance de materia con colores */
+        .balance-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .balance-column {
+            background: linear-gradient(135deg, #F0F7F8 0%, #E8F4F5 100%);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-top: 4px solid var(--verde-menta);
+            box-shadow: var(--sombra-suave);
+        }
+
+        .balance-column:nth-child(2) {
+            border-top-color: var(--salmon);
+        }
+
+        .balance-column h4 {
+            color: var(--azul-petroleo);
+            margin-top: 0;
+            border-bottom: 2px solid var(--mostaza);
+            padding-bottom: 0.5rem;
+        }
+
+        .balance-item {
+            padding: 0.8rem;
+            margin: 0.5rem 0;
+            background: var(--blanco);
+            border-radius: 6px;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.95rem;
+            border-left: 3px solid var(--lavanda);
+            transition: all 0.3s ease;
+        }
+
+        .balance-item:hover {
+            transform: translateX(5px);
+            box-shadow: var(--sombra-suave);
+        }
+
+        /* Tabla comparativa mejorada */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            box-shadow: var(--sombra-media);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .comparison-table thead {
+            background: linear-gradient(135deg, var(--azul-petroleo) 0%, var(--azul-cielo) 100%);
+            color: var(--blanco);
+        }
+
+        .comparison-table th {
+            padding: 1.2rem;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .comparison-table td {
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 1px solid var(--gris-claro);
+            font-size: 0.98rem;
+        }
+
+        .comparison-table tbody tr:nth-child(even) {
+            background: linear-gradient(90deg, rgba(168, 218, 220, 0.1) 0%, rgba(184, 184, 209, 0.1) 100%);
+        }
+
+        .comparison-table tbody tr:hover {
+            background: linear-gradient(90deg, rgba(168, 218, 220, 0.2) 0%, rgba(242, 132, 130, 0.1) 100%);
+        }
+
+        .comparison-table .year-cell {
+            font-weight: 600;
+            color: var(--azul-petroleo);
+            background: linear-gradient(135deg, #F0F7F8 0%, #E8F4F5 100%);
+        }
+
+        .efficiency-high {
+            color: #2d7a3e;
+            font-weight: 700;
+            background: rgba(156, 175, 136, 0.2);
+            padding: 0.3rem 0.6rem;
+            border-radius: 6px;
+        }
+
+        .efficiency-medium {
+            color: #C87941;
+            font-weight: 700;
+            background: rgba(212, 163, 115, 0.2);
+            padding: 0.3rem 0.6rem;
+            border-radius: 6px;
+        }
+
+        .efficiency-low {
+            color: #b85450;
+            font-weight: 700;
+            background: rgba(242, 132, 130, 0.2);
+            padding: 0.3rem 0.6rem;
+            border-radius: 6px;
+        }
+
+        /* Aplicaciones con gradientes */
+        .aplicaciones-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .aplicacion-card {
+            background: linear-gradient(135deg, var(--blanco) 0%, #F8FAFB 100%);
+            padding: 2rem;
+            border-radius: 12px;
+            border-top: 4px solid var(--mostaza);
+            transition: all 0.4s ease;
+            box-shadow: var(--sombra-suave);
+        }
+
+        .aplicacion-card:nth-child(1) {
+            border-top-color: var(--verde-salvia);
+        }
+
+        .aplicacion-card:nth-child(2) {
+            border-top-color: var(--azul-cielo);
+        }
+
+        .aplicacion-card:nth-child(3) {
+            border-top-color: var(--lavanda);
+        }
+
+        .aplicacion-card:nth-child(4) {
+            border-top-color: var(--coral-suave);
+        }
+
+        .aplicacion-card:nth-child(5) {
+            border-top-color: var(--salmon);
+        }
+
+        .aplicacion-card:nth-child(6) {
+            border-top-color: var(--verde-menta);
+        }
+
+        .aplicacion-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 35px rgba(168, 218, 220, 0.3);
+        }
+
+        .aplicacion-card h4 {
+            color: var(--azul-petroleo);
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+
+        /* Bibliografía mejorada */
+        .referencias-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .referencias-list li {
+            padding: 1.2rem;
+            margin: 1rem 0;
+            background: linear-gradient(135deg, var(--blanco) 0%, #F8FAFB 100%);
+            border-radius: 8px;
+            border-left: 4px solid var(--azul-grisaceo);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            transition: all 0.3s ease;
+            box-shadow: var(--sombra-suave);
+        }
+
+        .referencias-list li:nth-child(odd) {
+            border-left-color: var(--verde-menta);
+        }
+
+        .referencias-list li:nth-child(even) {
+            border-left-color: var(--lavanda);
+        }
+
+        .referencias-list li:hover {
+            border-left-width: 6px;
+            transform: translateX(8px);
+            box-shadow: var(--sombra-color);
+        }
+
+        .referencias-list a {
+            color: var(--azul-cielo);
+            text-decoration: none;
+            word-break: break-word;
+            font-weight: 500;
+        }
+
+        .referencias-list a:hover {
+            color: var(--azul-petroleo);
+            text-decoration: underline;
+        }
+
+        /* Footer con gradiente */
+        footer {
+            background: linear-gradient(135deg, var(--azul-petroleo) 0%, var(--azul-cielo) 100%);
+            color: var(--blanco);
+            padding: 2.5rem 2rem;
+            text-align: center;
+            margin-top: 3rem;
+            box-shadow: 0 -4px 20px rgba(31, 58, 68, 0.2);
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-info {
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .footer-authors {
+            font-size: 0.9rem;
+            color: var(--verde-menta);
+            margin-top: 0.5rem;
+        }
+
+        /* Animaciones */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        section {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 1.3rem;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+
+            .balance-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .comparison-table {
+                font-size: 0.85rem;
+            }
+
+            .comparison-table th,
+            .comparison-table td {
+                padding: 0.6rem;
+            }
+
+            main {
+                padding: 120px 1rem 2rem;
+            }
+        }
+
+        /* Scroll suave */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Estilos para énfasis */
+        strong {
+            color: var(--azul-petroleo);
+            font-weight: 600;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, rgba(212, 163, 115, 0.3) 0%, rgba(244, 162, 97, 0.3) 100%);
+            background-repeat: no-repeat;
+            background-size: 100% 40%;
+            background-position: 0 85%;
+            padding: 0 0.3rem;
+            border-radius: 3px;
+        }
+
+        /* Badge decorativo */
+        .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--verde-menta) 0%, var(--verde-salvia) 100%);
+            color: var(--azul-petroleo);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin: 0.5rem 0.3rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-title">
+                <h1>Amoniaco: Evolución Histórica del Proceso de Producción</h1>
+                <p class="subtitle">Universidad Técnica Particular de Loja • Ingeniería Química • Enero 2026</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#introduccion">Introducción</a></li>
+                    <li><a href="#caracteristicas">Características</a></li>
+                    <li><a href="#procesos">Procesos</a></li>
+                    <li><a href="#comparacion">Comparación</a></li>
+                    <li><a href="#aplicaciones">Aplicaciones</a></li>
+                    <li><a href="#conclusiones">Conclusiones</a></li>
+                    <li><a href="#referencias">Referencias</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Introducción -->
+        <section id="introduccion">
+            <h2>Introducción</h2>
+            <p>El amoniaco es un compuesto químico fundamental cuya molécula está formada por un átomo de nitrógeno (N) y tres átomos de hidrógeno (H), representada por la fórmula <strong>NH₃</strong>. Presenta una estructura no plana, con el átomo central de nitrógeno dispuesto en una geometría tetraédrica debido a la hibridación de orbitales sp³, y una geometría molecular piramidal trigonal. En disolución acuosa, el amoniaco se comporta como una base débil, dando lugar a la formación del ion amonio (NH₄⁺).</p>
+
+            <p>Desde una perspectiva histórica y científica, el amoniaco marcó un hito en el desarrollo industrial con la implementación del <span class="highlight">proceso Haber-Bosch</span> a inicios del siglo XX, el cual permitió su síntesis a gran escala a partir de nitrógeno e hidrógeno. Este avance transformó profundamente la agricultura moderna mediante la producción masiva de fertilizantes nitrogenados, contribuyendo de manera decisiva al incremento de la productividad agrícola y a la seguridad alimentaria mundial.</p>
+
+            <p>Además de su importancia en el sector agrícola, el amoniaco es una materia prima esencial en la síntesis de numerosos fármacos y en la elaboración de productos comerciales como cosméticos, tintes para el cabello, desinfectantes y limpiadores domésticos. No obstante, pese a su amplio uso, se trata de una sustancia cáustica, tóxica y potencialmente peligrosa, lo que exige estrictas medidas de seguridad en su manipulación y producción.</p>
+
+            <div class="formula-display">
+                N₂(g) + 3H₂(g) ⇌ 2NH₃(g)
+            </div>
+
+            <p>En 2012, la producción industrial mundial de amoniaco alcanzó aproximadamente <strong>198 millones de toneladas</strong>, lo que representó un incremento del 35% con respecto al año 2006. Este documento analiza la evolución histórica del proceso de producción del amoniaco desde 1774 hasta la actualidad, considerando materiales disponibles, operaciones unitarias, diagramas de flujo, balances de materia y eficiencias de conversión.</p>
+        </section>
+
+        <!-- Características del Compuesto -->
+        <section id="caracteristicas">
+            <h2>Características del Compuesto</h2>
+
+            <h3>Propiedades Físicas</h3>
+            <div class="properties-grid">
+                <div class="property-card">
+                    <h4>Estado y Apariencia</h4>
+                    <ul>
+                        <li>Gas incoloro a temperatura ambiente</li>
+                        <li>Olor penetrante y nauseabundo característico</li>
+                        <li>Fácilmente evaporable en estado líquido (compuesto volátil)</li>
+                    </ul>
+                </div>
+                <div class="property-card">
+                    <h4>Solubilidad</h4>
+                    <ul>
+                        <li>Altamente soluble en agua</li>
+                        <li>Soluble en etanol, cloroformo y éter etílico</li>
+                        <li>Gran capacidad de ionizar electrolitos</li>
+                        <li>Disuelve gran variedad de sales</li>
+                    </ul>
+                </div>
+                <div class="property-card">
+                    <h4>Puntos de Transición</h4>
+                    <ul>
+                        <li>Punto de ebullición: 240 K (-33°C)</li>
+                        <li>Punto de fusión: 195 K (-78°C)</li>
+                        <li>Estable a temperatura ambiente</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Propiedades Químicas</h3>
+            <div class="properties-grid">
+                <div class="property-card">
+                    <h4>Comportamiento Ácido-Base</h4>
+                    <ul>
+                        <li>Base débil en solución acuosa</li>
+                        <li>pH en disoluciones 0.1M: aproximadamente 11.2</li>
+                        <li>Forma ion amonio (NH₄⁺) en agua</li>
+                        <li>Disoluciones acuosas son alcalinas</li>
+                    </ul>
+                </div>
+                <div class="property-card">
+                    <h4>Reactividad</h4>
+                    <ul>
+                        <li>Compuesto corrosivo para metales y tejidos</li>
+                        <li>Reacciona violentamente con ácidos</li>
+                        <li>Reacciona con oxidantes fuertes y halógenos</li>
+                        <li>Reacciones explosivas con acetaldehído, boro, calcio, ácido clórico</li>
+                    </ul>
+                </div>
+                <div class="property-card">
+                    <h4>Estabilidad</h4>
+                    <ul>
+                        <li>Estable a temperatura ambiente</li>
+                        <li>Se descompone a altas temperaturas en H₂ y N₂</li>
+                        <li>Producto natural de descomposición orgánica</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Fórmula y Estructura Molecular</h3>
+            <table class="tech-table">
+                <thead>
+                    <tr>
+                        <th>Propiedad</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Fórmula Química</strong></td>
+                        <td>NH₃</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Peso Molecular</strong></td>
+                        <td>17.03 g/mol</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Geometría Molecular</strong></td>
+                        <td>Piramidal trigonal</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hibridación del Nitrógeno</strong></td>
+                        <td>sp³</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Punto de Ebullición</strong></td>
+                        <td>-33.34°C (240 K)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Punto de Fusión</strong></td>
+                        <td>-77.73°C (195 K)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nomenclatura IUPAC</strong></td>
+                        <td>Trihidruro de nitrógeno</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Procesos de Obtención -->
+        <section id="procesos">
+            <h2>Procesos Históricos de Obtención</h2>
+
+            <!-- Proceso 1774 -->
+            <div class="proceso-historico">
+                <div class="proceso-header" onclick="toggleProceso('proceso1774')">
+                    <h3>1774 – Joseph Priestley: Síntesis por Descomposición Térmica</h3>
+                    <span class="toggle-btn" id="toggle1774">+</span>
+                </div>
+                <div class="proceso-content" id="proceso1774">
+                    <div class="proceso-details">
+                        <h4>Contexto Histórico</h4>
+                        <p>Joseph Priestley fue uno de los primeros científicos en obtener amoniaco mediante un método sistemático, utilizando la descomposición térmica de sales de amonio. Este método representó los inicios de la química experimental y sentó las bases para comprender la composición del amoniaco.</p>
+
+                        <h4>Materiales Utilizados</h4>
+                        <span class="badge">NH₄Cl - Cloruro de amonio</span>
+                        <span class="badge">Ca(OH)₂ - Hidróxido de calcio</span>
+
+                        <div class="reaccion-box">
+                            2NH₄Cl(s) + Ca(OH)₂(s) → 2NH₃(g) + CaCl₂(s) + 2H₂O(l)
+                        </div>
+
+                        <h4>Operaciones Unitarias</h4>
+                        <div class="operaciones-list">
+                            <div class="operacion-item">Reacción por descomposición térmica</div>
+                            <div class="operacion-item">Separación gas-sólido</div>
+                            <div class="operacion-item">Recolección del gas</div>
+                        </div>
+
+                        <h4>Balance de Materia</h4>
+                        <div class="balance-grid">
+                            <div class="balance-column">
+                                <h4>Entradas</h4>
+                                <div class="balance-item">NH₄Cl (Cloruro de amonio)</div>
+                                <div class="balance-item">Ca(OH)₂ (Hidróxido de calcio)</div>
+                            </div>
+                            <div class="balance-column">
+                                <h4>Salidas</h4>
+                                <div class="balance-item">NH₃ producido: 40%</div>
+                                <div class="balance-item">CaCl₂ + H₂O (residuos): 50%</div>
+                                <div class="balance-item">Pérdidas: 10%</div>
+                            </div>
+                        </div>
+
+                        <div class="diagrama-container">
+                            <h4>📊 Diagrama de Flujo del Proceso (1774)</h4>
+                            <svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg" class="diagrama-img">
+                                <defs>
+                                    <marker id="arrow1774" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                                        <polygon points="0 0, 10 3, 0 6" fill="#4F6D7A" />
+                                    </marker>
+                                    <linearGradient id="grad1774-1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" style="stop-color:#A8DADC;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#9CAF88;stop-opacity:1" />
+                                    </linearGradient>
+                                    <linearGradient id="grad1774-2" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" style="stop-color:#1F3A44;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#457B9D;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                
+                                <!-- Entradas -->
+                                <rect x="50" y="50" width="120" height="60" fill="url(#grad1774-1)" stroke="#1F3A44" stroke-width="2" rx="8"/>
+                                <text x="110" y="75" text-anchor="middle" font-size="14" fill="#1F3A44" font-weight="600">NH₄Cl</text>
+                                <text x="110" y="95" text-anchor="middle" font-size="12" fill="#1F3A44">Cloruro de</text>
+                                <text x="110" y="108" text-anchor="middle" font-size="12" fill="#1F3A44">amonio</text>
+                                
+                                <rect x="50" y="150" width="120" height="60" fill="url(#grad1774-1)" stroke="#1F3A44" stroke-width="2" rx="8"/>
+                                <text x="110" y="175" text-anchor="middle" font-size="14" fill="#1F3A44" font-weight="600">Ca(OH)₂</text>
+                                <text x="110" y="195" text-anchor="middle" font-size="12" fill="#1F3A44">Hidróxido de</text>
+                                <text x="110" y="208" text-anchor="middle" font-size="12" fill="#1F3A44">calcio</text>
+                                
+                                <!-- Flechas a reactor -->
+                                <line x1="170" y1="80" x2="280" y2="120" stroke="#4F6D7A" stroke-width="3" marker-end="url(#arrow1774)"/>
+                                <line x1="170" y1="180" x2="280" y2="140" stroke="#4F6D7A" stroke-width="3" marker-end="url(#arrow1774)"/>
+                                
+                                <!-- Reactor -->
+                                <rect x="280" y="90" width="160" height="80" fill="url(#grad1774-2)" stroke="#D4A373" stroke-width="4" rx="8"/>
+                                <text x="360" y="120" text-anchor="middle" font-size="16" fill="#FFFFFF" font-weight="700">REACTOR</text>
+                                <text x="360" y="140" text-anchor="middle" font-size="13" fill="#A8DADC">Descomposición</text>
+                                <text x="360" y="157" text-anchor="middle" font-size="13" fill="#A8DADC">térmica</text>
+                                
+                                <!-- Flecha a separador -->
+                                <line x1="440" y1="130" x2="500" y2="130" stroke="#4F6D7A" stroke-width="3" marker-end="url(#arrow1774)"/>
+                                
+                                <!-- Separador -->
+                                <circle cx="540" cy="130" r="40" fill="#F0F7F8" stroke="#457B9D" stroke-width="3"/>
+                                <text x="540" y="125" text-anchor="middle" font-size="13" fill="#1F3A44" font-weight="600">Separación</text>
+                                <text x="540" y="140" text-anchor="middle" font-size="12" fill="#4F6D7A">Gas-Sólido</text>
+                                
+                                <!-- Salidas -->
+                                <line x1="575" y1="110" x2="630" y2="80" stroke="#4F6D7A" stroke-width="3" marker-end="url(#arrow1774)"/>
+                                <rect x="630" y="50" width="120" height="60" fill="#D4A373" stroke="#1F3A44" stroke-width="2" rx="8"/>
+                                <text x="690" y="75" text-anchor="middle" font-size="16" fill="#FFFFFF" font-weight="700">NH₃</text>
+                                <text x="690" y="95" text-anchor="middle" font-size="13" fill="#FFFFFF">Amoniaco</text>
+                                <text x="690" y="108" text-anchor="middle" font-size="12" fill="#FFFFFF" font-weight="600">(40%)</text>
+                                
+                                <line x1="575" y1="150" x2="630" y2="180" stroke="#4F6D7A" stroke-width="3" marker-end="url(#arrow1774)"/>
+                                <rect x="630" y="150" width="120" height="60" fill="#F0F7F8" stroke="#1F3A44" stroke-width="2" rx="8"/>
+                                <text x="690" y="175" text-anchor="middle" font-size="13" fill="#1F3A44" font-weight="600">Residuos</text>
+                                <text x="690" y="193" text-anchor="middle" font-size="11" fill="#4F6D7A">CaCl₂ + H₂O</text>
+                                <text x="690" y="206" text-anchor="middle" font-size="11" fill="#4F6D7A">(50%)</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proceso 1785 -->
+            <div class="proceso-historico">
+                <div class="proceso-header" onclick="toggleProceso('proceso1785')">
+                    <h3>1785 – Claude Louis Berthollet: Estudio de Descomposición</h3>
+                    <span class="toggle-btn" id="toggle1785">+</span>
+                </div>
+                <div class="proceso-content" id="proceso1785">
+                    <div class="proceso-details">
+                        <h4>Contexto Histórico</h4>
+                        <p>Claude Louis Berthollet realizó estudios fundamentales sobre la composición química del amoniaco, demostrando que podía descomponerse en nitrógeno e hidrógeno. Este trabajo fue crucial para comprender la naturaleza del compuesto y establecer las bases teóricas para la síntesis inversa.</p>
+
+                        <h4>Materiales Utilizados</h4>
+                        <span class="badge">NH₃ - Amoniaco</span>
+
+                        <div class="reaccion-box">
+                            2NH₃(g) → N₂(g) + 3H₂(g)
+                        </div>
+
+                        <h4>Operaciones Unitarias</h4>
+                        <div class="operaciones-list">
+                            <div class="operacion-item">Reacción de descomposición</div>
+                            <div class="operacion-item">Separación de gases</div>
+                        </div>
+
+                        <h4>Balance de Materia</h4>
+                        <div class="balance-grid">
+                            <div class="balance-column">
+                                <h4>Entradas</h4>
+                                <div class="balance-item">NH₃ (Amoniaco)</div>
+                            </div>
+                            <div class="balance-column">
+                                <h4>Salidas</h4>
+                                <div class="balance-item">N₂ (Nitrógeno): 25%</div>
+                                <div class="balance-item">H₂ (Hidrógeno): 65%</div>
+                                <div class="balance-item">Pérdidas: 10%</div>
+                            </div>
+                        </div>
+
+                        <div class="diagrama-container">
+                            <h4>📊 Diagrama de Flujo del Proceso (1785)</h4>
+                            <svg viewBox="0 0 600 250" xmlns="http://www.w3.org/2000/svg" class="diagrama-img">
+                                <defs>
+                                    <marker id="arrow1785" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                                        <polygon points="0 0, 10 3, 0 6" fill="#4F6D7A" />
+                                    </marker>
+                                    <linearGradient id="grad1785" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" style="stop-color:#F28482;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#F4A261;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                
+                                <!-- Entrada -->
+                                <rect x="50" y="95" width="120" height="60" fill="#D4A373" stroke="#1F3A44" stroke-width="2" rx="8"/>
+                                <text x="110" y="120" text-anchor="middle" font-size="16" fill="#FFFFFF" font-weight="700">NH₃</text>
+                                <text x="110" y="140" text-anchor="middle" font-size="13" fill="#FFFFFF">Amoniaco</text>
+                                
+                                <!-- Flecha -->
+                                <line x1="170" y1="125" x2="240" y2="125" stroke="#4F6D7A" stroke-width="3" marker-end="url(#arrow1785)"/>
+                                
+                                <!-- Reactor de descomposición -->
+                                <rect x="240" y="85" width="160" height="80" fill="url(#grad1785)" stroke="#457B9D" stroke-width="4" rx="8"/>
+                                <text x="320" y="115" text-anchor="middle" font-size="15" fill="#FFFFFF" font-weight="700">DESCOMPOSICIÓN</text>
+                                <text x="320" y="135" text-anchor="middle" font-size="12" fill="#FFFFFF">Térmica</text>
+                                <text x="320" y="152" text-anchor="middle" font-size="12" fill="#FFFFFF">Calor aplicado</text>
+                                
+                                <!-- Flechas a salidas -->
+                                <line x1="400" y1="105" x2="450" y2="75" stroke="#4F6D7A" stroke-width="3" marker-end="url(#arrow1785)"/>
+                                <line x1="400" y1="145" x2="450" y2="175" stroke="#4F6D7A" stroke-width="3" marker-end="url(#arrow1785)"/>
+                                
+                                <!-- Salidas -->
+                                <rect x="450" y="45" width="100" height="60" fill="#A8DADC" stroke="#1F3A44" stroke-width="2" rx="8"/>
+                                <text x="500" y="68" text-anchor="middle" font-size="15" fill="#1F3A44" font-weight="700">N₂</text>
+                                <text x="500" y="87" text-anchor="middle" font-size="12" fill="#1F3A44">Nitrógeno</text>
+                                <text x="500" y="100" text-anchor="middle" font-size="11" fill="#1F3A44" font-weight="600">(25%)</text>
+                                
+                                <rect x="450" y="145" width="100" height="60" fill="#B8B8D1" stroke="#1F3A44" stroke-width="2" rx="8"/>
+                                <text x="500" y="168" text-anchor="middle" font-size="15" fill="#1F3A44" font-weight="700">H₂</text>
+                                <text x="500" y="187" text-anchor="middle" font-size="12" fill="#1F3A44">Hidrógeno</text>
+                                <text x="500" y="200" text-anchor="middle" font-size="11" fill="#1F3A44" font-weight="600">(65%)</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proceso 1823 -->
+            <div class="proceso-historico">
+                <div class="proceso-header" onclick="toggleProceso('proceso1823')">
+                    <h3>1823 – Johann Döbereiner: Primer Intento de Síntesis Directa</h3>
+                    <span class="toggle-btn" id="toggle1823">+</span>
+                </div>
+                <div class="proceso-content" id="proceso1823">
+                    <div class="proceso-details">
+                        <h4>Contexto Histórico</h4>
+                        <p>Johann Döbereiner realizó los primeros intentos documentados de síntesis directa de amoniaco a partir de nitrógeno e hidrógeno. Aunque la conversión fue extremadamente baja (5%), este trabajo demostró que la reacción inversa era termodinámicamente posible y estableció el principio fundamental del proceso moderno.</p>
+
+                        <h4>Materiales Utilizados</h4>
+                        <span class="badge">N₂ - Nitrógeno (aire)</span>
+                        <span class="badge">H₂ - Hidrógeno (metal + ácido)</span>
+
+                        <div class="reaccion-box">
+                            N₂(g) + 3H₂(g) ⇌ 2NH₃(g)
+                        </div>
+
+                        <h4>Operaciones Unitarias</h4>
+                        <div class="operaciones-list">
+                            <div class="operacion-item">Mezclado de gases</div>
+                            <div class="operacion-item">Reacción catalítica primitiva</div>
+                            <div class="operacion-item">Separación de gases</div>
+                        </div>
+
+                        <h4>Balance de Materia</h4>
+                        <div class="balance-grid">
+                            <div class="balance-column">
+                                <h4>Entradas</h4>
+                                <div class="balance-item">N₂ (aire)</div>
+                                <div class="balance-item">H₂ (metal + ácido)</div>
+                            </div>
+                            <div class="balance-column">
+                                <h4>Salidas</h4>
+                                <div class="balance-item">NH₃ producido: 5%</div>
+                                <div class="balance-item">Reactivos sin reaccionar: 90%</div>
+                                <div class="balance-item">Pérdidas: 5%</div>
+                            </div>
+                        </div>
+
+                        <div class="diagrama-container">
+                            <h4>📊 Diagrama de Flujo del Proceso (1823)</h4>
+                            <p style="text-align: center; font-style: italic; color: var(--azul-grisaceo); margin-top: 1rem;">
+                                Diagrama conceptual basado en el proceso descrito en el documento original
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proceso 1908 -->
+            <div class="proceso-historico">
+                <div class="proceso-header" onclick="toggleProceso('proceso1908')">
+                    <h3>1908 – Fritz Haber: Síntesis Catalítica a Alta Presión</h3>
+                    <span class="toggle-btn" id="toggle1908">+</span>
+                </div>
+                <div class="proceso-content" id="proceso1908">
+                    <div class="proceso-details">
+                        <h4>Contexto Histórico</h4>
+                        <p>Fritz Haber logró un avance revolucionario al desarrollar un proceso catalítico eficiente para la síntesis de amoniaco utilizando alta presión y catalizadores de hierro. Este descubrimiento le valió el Premio Nobel de Química en 1918 y transformó la industria química. Haber demostró que era posible sintetizar amoniaco a partir del nitrógeno atmosférico, resolviendo el problema de la fijación de nitrógeno que había limitado la agricultura mundial.</p>
+
+                        <h4>Materiales Utilizados</h4>
+                        <span class="badge">N₂ - Nitrógeno (aire)</span>
+                        <span class="badge">H₂ - Hidrógeno (carbón + vapor)</span>
+                        <span class="badge">Fe - Catalizador de hierro</span>
+
+                        <div class="reaccion-box">
+                            N₂(g) + 3H₂(g) ⇌ 2NH₃(g) + Calor
+                        </div>
+
+                        <h4>Operaciones Unitarias</h4>
+                        <div class="operaciones-list">
+                            <div class="operacion-item">Producción de gases</div>
+                            <div class="operacion-item">Purificación</div>
+                            <div class="operacion-item">Mezclado</div>
+                            <div class="operacion-item">Compresión (alta presión)</div>
+                            <div class="operacion-item">Reacción catalítica</div>
+                            <div class="operacion-item">Condensación</div>
+                            <div class="operacion-item">Separación</div>
+                        </div>
+
+                        <h4>Balance de Materia</h4>
+                        <div class="balance-grid">
+                            <div class="balance-column">
+                                <h4>Entradas</h4>
+                                <div class="balance-item">N₂ (aire)</div>
+                                <div class="balance-item">H₂ (carbón + vapor)</div>
+                                <div class="balance-item">Catalizador de Fe</div>
+                            </div>
+                            <div class="balance-column">
+                                <h4>Salidas</h4>
+                                <div class="balance-item">NH₃ producido: 15%</div>
+                                <div class="balance-item">Reactivos sin reaccionar: 80%</div>
+                                <div class="balance-item">Pérdidas: 5%</div>
+                            </div>
+                        </div>
+
+                        <div class="diagrama-container">
+                            <h4>📊 Diagrama de Flujo del Proceso (1908)</h4>
+                            <p style="text-align: center; font-style: italic; color: var(--azul-grisaceo); margin-top: 1rem;">
+                                Proceso Haber: Primera síntesis catalítica exitosa a escala de laboratorio
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proceso 1914 -->
+            <div class="proceso-historico">
+                <div class="proceso-header" onclick="toggleProceso('proceso1914')">
+                    <h3>1914 – Proceso Haber-Bosch: Producción Industrial</h3>
+                    <span class="toggle-btn" id="toggle1914">+</span>
+                </div>
+                <div class="proceso-content" id="proceso1914">
+                    <div class="proceso-details">
+                        <h4>Contexto Histórico</h4>
+                        <p>Carl Bosch, ingeniero químico alemán, logró escalar el proceso de Haber a nivel industrial, desarrollando reactores de alta presión y sistemas de reciclaje eficientes. Este proceso industrial revolucionó la producción mundial de fertilizantes y fue crucial durante la Primera Guerra Mundial para la fabricación de explosivos. El proceso Haber-Bosch es considerado uno de los avances tecnológicos más importantes del siglo XX, permitiendo alimentar a una población mundial en crecimiento.</p>
+
+                        <h4>Materiales Utilizados</h4>
+                        <span class="badge">N₂ - Aire atmosférico</span>
+                        <span class="badge">H₂ - Carbón + vapor</span>
+                        <span class="badge">Fe - Catalizador optimizado</span>
+
+                        <div class="reaccion-box">
+                            N₂(g) + 3H₂(g) ⇌ 2NH₃(g) | ΔH = -92.4 kJ/mol
+                        </div>
+
+                        <h4>Operaciones Unitarias</h4>
+                        <div class="operaciones-list">
+                            <div class="operacion-item">Reformado de gas</div>
+                            <div class="operacion-item">Purificación avanzada</div>
+                            <div class="operacion-item">Mezclado</div>
+                            <div class="operacion-item">Compresión (150-300 atm)</div>
+                            <div class="operacion-item">Reacción catalítica</div>
+                            <div class="operacion-item">Condensación</div>
+                            <div class="operacion-item">Separación</div>
+                            <div class="operacion-item">Reciclaje de gases</div>
+                        </div>
+
+                        <h4>Balance de Materia</h4>
+                        <div class="balance-grid">
+                            <div class="balance-column">
+                                <h4>Entradas Frescas</h4>
+                                <div class="balance-item">N₂ (aire)</div>
+                                <div class="balance-item">H₂ (reformado)</div>
+                                <div class="balance-item">Catalizador Fe</div>
+                            </div>
+                            <div class="balance-column">
+                                <h4>Salidas</h4>
+                                <div class="balance-item">NH₃ producido: 90%</div>
+                                <div class="balance-item">Gases reciclados: 8%</div>
+                                <div class="balance-item">Purgas: 2%</div>
+                            </div>
+                        </div>
+
+                        <div class="diagrama-container">
+                            <h4>📊 Diagrama de Flujo del Proceso (1914)</h4>
+                            <p style="text-align: center; font-style: italic; color: var(--azul-grisaceo); margin-top: 1rem;">
+                                Proceso Haber-Bosch industrial: Incluye reciclaje de gases para máxima eficiencia
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proceso Actual -->
+            <div class="proceso-historico">
+                <div class="proceso-header" onclick="toggleProceso('procesoActual')">
+                    <h3>Proceso Actual: Tecnología Moderna y Sostenibilidad</h3>
+                    <span class="toggle-btn" id="toggleActual">+</span>
+                </div>
+                <div class="proceso-content" id="procesoActual">
+                    <div class="proceso-details">
+                        <h4>Contexto Histórico</h4>
+                        <p>Los procesos actuales de producción de amoniaco han evolucionado significativamente desde el Haber-Bosch original, incorporando tecnologías avanzadas de catálisis, sistemas de recuperación energética y métodos sostenibles de obtención de hidrógeno. La tendencia actual se orienta hacia la producción de "amoniaco verde" mediante electrólisis del agua con energía renovable, reduciendo drásticamente la huella de carbono del proceso. La eficiencia ha alcanzado niveles del 97%, con pérdidas mínimas y sistemas de reciclaje casi perfectos.</p>
+
+                        <h4>Materiales Utilizados</h4>
+                        <span class="badge">N₂ - Separación criogénica</span>
+                        <span class="badge">H₂ - Gas natural / Electrólisis</span>
+                        <span class="badge">Catalizadores avanzados (Fe + promotores)</span>
+
+                        <div class="reaccion-box">
+                            N₂(g) + 3H₂(g) ⇌ 2NH₃(g) | ΔH = -92.4 kJ/mol (Exotérmica)
+                        </div>
+
+                        <h4>Operaciones Unitarias</h4>
+                        <div class="operaciones-list">
+                            <div class="operacion-item">Producción de hidrógeno</div>
+                            <div class="operacion-item">Separación criogénica de aire</div>
+                            <div class="operacion-item">Purificación avanzada</div>
+                            <div class="operacion-item">Compresión optimizada</div>
+                            <div class="operacion-item">Reacción catalítica moderna</div>
+                            <div class="operacion-item">Condensación eficiente</div>
+                            <div class="operacion-item">Separación líquido-gas</div>
+                            <div class="operacion-item">Almacenamiento</div>
+                        </div>
+
+                        <h4>Balance de Materia</h4>
+                        <div class="balance-grid">
+                            <div class="balance-column">
+                                <h4>Entradas</h4>
+                                <div class="balance-item">N₂ (separación criogénica)</div>
+                                <div class="balance-item">H₂ (gas natural o electrólisis)</div>
+                                <div class="balance-item">Catalizadores avanzados</div>
+                                <div class="balance-item">Energía (optimizada)</div>
+                            </div>
+                            <div class="balance-column">
+                                <h4>Salidas</h4>
+                                <div class="balance-item">NH₃ líquido producido: 97%</div>
+                                <div class="balance-item">Purga mínima: 2%</div>
+                                <div class="balance-item">Pérdidas: 1%</div>
+                            </div>
+                        </div>
+
+                        <h4>Innovaciones Tecnológicas Actuales</h4>
+                        <div class="properties-grid">
+                            <div class="property-card">
+                                <h4>⚡ Amoniaco Verde</h4>
+                                <ul>
+                                    <li>Hidrógeno por electrólisis con energía renovable</li>
+                                    <li>Reducción del 90% en emisiones de CO₂</li>
+                                    <li>Producción descentralizada</li>
+                                </ul>
+                            </div>
+                            <div class="property-card">
+                                <h4>🔬 Catalizadores Avanzados</h4>
+                                <ul>
+                                    <li>Rutenio sobre soporte de carbono</li>
+                                    <li>Mayor actividad a presiones moderadas</li>
+                                    <li>Vida útil prolongada</li>
+                                </ul>
+                            </div>
+                            <div class="property-card">
+                                <h4>💡 Eficiencia Energética</h4>
+                                <ul>
+                                    <li>Recuperación de calor del proceso</li>
+                                    <li>Sistemas de compresión optimizados</li>
+                                    <li>Control digital avanzado</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="diagrama-container">
+                            <h4>📊 Diagrama de Flujo del Proceso (2026)</h4>
+                            <p style="text-align: center; font-style: italic; color: var(--azul-grisaceo); margin-top: 1rem;">
+                                Proceso moderno optimizado con tecnología verde y máxima eficiencia energética
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparación -->
+        <section id="comparacion">
+            <h2>Comparación de Eficiencia Histórica</h2>
+            <p>La siguiente tabla resume la evolución de la eficiencia en la producción de amoniaco a lo largo de más de dos siglos de desarrollo científico e industrial.</p>
+
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Año / Proceso</th>
+                        <th>NH₃ Producido</th>
+                        <th>Reactivos No Reaccionados</th>
+                        <th>Pérdidas</th>
+                        <th>Innovación Principal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="year-cell">1774<br><small>Priestley</small></td>
+                        <td class="efficiency-medium">40%</td>
+                        <td>—</td>
+                        <td class="efficiency-low">10%</td>
+                        <td>Descomposición térmica de sales</td>
+                    </tr>
+                    <tr>
+                        <td class="year-cell">1785<br><small>Berthollet</small></td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td class="efficiency-low">10%</td>
+                        <td>Estudio de composición química</td>
+                    </tr>
+                    <tr>
+                        <td class="year-cell">1823<br><small>Döbereiner</small></td>
+                        <td class="efficiency-low">5%</td>
+                        <td class="efficiency-low">90%</td>
+                        <td class="efficiency-medium">5%</td>
+                        <td>Primera síntesis directa N₂ + H₂</td>
+                    </tr>
+                    <tr>
+                        <td class="year-cell">1908<br><small>Haber</small></td>
+                        <td class="efficiency-low">15%</td>
+                        <td class="efficiency-low">80%</td>
+                        <td class="efficiency-medium">5%</td>
+                        <td>Catálisis con hierro + alta presión</td>
+                    </tr>
+                    <tr>
+                        <td class="year-cell">1914<br><small>Haber-Bosch</small></td>
+                        <td class="efficiency-high">90%</td>
+                        <td class="efficiency-medium">8%</td>
+                        <td class="efficiency-high">2%</td>
+                        <td>Escala industrial + reciclaje</td>
+                    </tr>
+                    <tr>
+                        <td class="year-cell">2026<br><small>Actual</small></td>
+                        <td class="efficiency-high">97%</td>
+                        <td class="efficiency-high">2%</td>
+                        <td class="efficiency-high">1%</td>
+                        <td>Optimización + amoniaco verde</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p style="margin-top: 2rem;">El incremento dramático en la eficiencia desde 1823 hasta la actualidad representa uno de los logros más importantes de la ingeniería química. El salto del 5% al 90% de conversión entre 1823 y 1914 revolucionó la industria de fertilizantes y contribuyó decisivamente al crecimiento demográfico mundial del siglo XX.</p>
+        </section>
+
+        <!-- Aplicaciones -->
+        <section id="aplicaciones">
+            <h2>Aplicaciones Industriales y Biológicas</h2>
+
+            <div class="aplicaciones-grid">
+                <div class="aplicacion-card">
+                    <h4>🌾 Agricultura y Fertilizantes</h4>
+                    <p>Aproximadamente el <strong>90%</strong> del amoniaco producido mundialmente se destina a la fabricación de fertilizantes nitrogenados. Las plantas absorben el amoniaco como fuente de nitrógeno para producir aminoácidos, clorofila y proteínas. Los fertilizantes a base de amoniaco garantizan una mejor absorción de nutrientes en el suelo, manteniendo elevada la producción de alimentos y aumentando los niveles de zinc, boro y selenio en los cultivos.</p>
+                </div>
+
+                <div class="aplicacion-card">
+                    <h4>❄️ Refrigeración Industrial</h4>
+                    <p>El amoniaco anhidro (99% de pureza) se utiliza ampliamente en grandes plantas de congelación y refrigeración. Como refrigerante <strong>R-717</strong>, alcanza temperaturas de hasta <strong>-70°C</strong> con un rendimiento 3-10% superior a otros refrigerantes. Es más económico que los refrigerantes sintéticos, consume menos electricidad y tiene menores costos de operación. Se emplea principalmente en la industria alimentaria para conservación de carne, pescados, frutas, vegetales, leche y queso.</p>
+                </div>
+
+                <div class="aplicacion-card">
+                    <h4>🧪 Industria Química</h4>
+                    <p>El amoniaco es materia prima esencial en la síntesis de numerosos compuestos químicos, incluyendo <strong>ácido nítrico, urea, nitrato de amonio</strong>, y diversos fármacos. Su capacidad para formar complejos de coordinación y actuar como ligando lo hace fundamental en química analítica y síntesis orgánica avanzada.</p>
+                </div>
+
+                <div class="aplicacion-card">
+                    <h4>🧹 Productos de Limpieza</h4>
+                    <p>El amoniaco diluido en agua (típicamente 10% amoniaco, 90% agua) se utiliza en diversos productos de limpieza doméstica e industrial. Sus propiedades como desengrasante y quitamanchas lo hacen ideal para limpia vidrios, ceras para pulir pisos, limpiadores de cristal, y productos para baños y drenajes. Es especialmente efectivo para eliminar manchas de aceites vegetales y vino.</p>
+                </div>
+
+                <div class="aplicacion-card">
+                    <h4>💊 Industria Farmacéutica</h4>
+                    <p>El amoniaco interviene en la síntesis de numerosos fármacos y productos cosméticos, incluyendo tintes para el cabello, desinfectantes hospitalarios, y compuestos medicinales. Su papel como precursor de diversos principios activos farmacéuticos es fundamental en la medicina moderna.</p>
+                </div>
+
+                <div class="aplicacion-card">
+                    <h4>⚡ Almacenamiento de Energía</h4>
+                    <p>El amoniaco emerge como un <strong>vector energético prometedor</strong> para el almacenamiento y transporte de hidrógeno. Con una densidad energética volumétrica superior al hidrógeno líquido, el amoniaco puede descomponerse para liberar hidrógeno en celdas de combustible, convirtiéndose en una opción viable para la economía del hidrógeno y la descarbonización del transporte marítimo.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusiones -->
+        <section id="conclusiones">
+            <h2>Conclusiones</h2>
+
+            <p>La evolución histórica del proceso de producción de amoniaco representa uno de los avances tecnológicos más significativos de la química industrial moderna. Desde los experimentos pioneros de Joseph Priestley en 1774 hasta las tecnologías sostenibles actuales, el desarrollo del proceso ha transformado radicalmente la agricultura, la industria química y la seguridad alimentaria mundial.</p>
+
+            <p>El proceso Haber-Bosch, desarrollado entre 1908 y 1914, marcó un punto de inflexión crucial al permitir la síntesis industrial de amoniaco a partir de nitrógeno atmosférico e hidrógeno. Este avance aumentó la eficiencia de conversión del 5% al 90%, revolucionando la producción de fertilizantes y contribuyendo decisivamente al crecimiento demográfico del siglo XX. Fritz Haber y Carl Bosch recibieron el Premio Nobel de Química por sus contribuciones (1918 y 1931, respectivamente).</p>
+
+            <p>La incorporación progresiva de operaciones unitarias como compresión optimizada, condensación eficiente, separación avanzada y sistemas de reciclaje de gases ha elevado la eficiencia del proceso hasta el <strong>97%</strong> en la actualidad, con pérdidas de apenas el 1%. Los catalizadores modernos de hierro con promotores (Al₂O₃, K₂O, CaO) y los reactores de alta presión (200-300 bar) han permitido alcanzar conversiones casi completas.</p>
+
+            <p>La tendencia actual se orienta hacia la sostenibilidad ambiental mediante la producción de "amoniaco verde", utilizando hidrógeno obtenido por electrólisis del agua con energía renovable. Esta innovación reduce las emisiones de CO₂ en aproximadamente 90%, alineándose con los objetivos globales de descarbonización. Además, el amoniaco está emergiendo como un vector energético prometedor para el almacenamiento y transporte de hidrógeno.</p>
+
+            <p>En 2012, la producción mundial de amoniaco alcanzó <strong>198 millones de toneladas</strong>, un incremento del 35% respecto a 2006, demostrando la importancia continua de este compuesto en la economía global. El amoniaco sigue siendo fundamental no solo para la agricultura (90% del consumo), sino también para la refrigeración industrial, la industria química, farmacéutica y de limpieza.</p>
+
+            <p>El desarrollo histórico del proceso de producción de amoniaco ejemplifica cómo la investigación científica fundamental, combinada con la ingeniería aplicada y la innovación tecnológica continua, puede generar impactos transformadores en la sociedad. El legado de Haber y Bosch permanece vigente, y los desafíos actuales en sostenibilidad energética representan la próxima frontera en la evolución de este proceso esencial.</p>
+        </section>
+
+        <!-- Referencias -->
+        <section id="referencias">
+            <h2>Referencias Bibliográficas</h2>
+
+            <ul class="referencias-list">
+                <li>
+                    Gonzalez, L. (2024, 26 febrero). <em>NH3 Amoniaco: Aplicaciones, Propiedades Químicas y más datos de interés</em>. Quimicaly. 
+                    <a href="https://quimicaly.com/nh3-amoniaco/" target="_blank" rel="noopener">https://quimicaly.com/nh3-amoniaco/</a>
+                </li>
+                <li>
+                    Amoquimicos. (s.f.). <em>Usos del Amoniaco Líquido</em>. 
+                    <a href="https://www.amoquimicos.com/usos-del-amoniaco-liquido" target="_blank" rel="noopener">https://www.amoquimicos.com/usos-del-amoniaco-liquido</a>
+                </li>
+                <li>
+                    Colaboradores de Wikipedia. (2025, 19 diciembre). <em>Amoníaco</em>. Wikipedia, la Enciclopedia Libre. 
+                    <a href="https://es.wikipedia.org/wiki/Amon%C3%ADaco" target="_blank" rel="noopener">https://es.wikipedia.org/wiki/Amoníaco</a>
+                </li>
+                <li>
+                    Recursos, P. (2023, 17 agosto). <em>¿Qué es el Amoniaco?</em> Profe Recursos. 
+                    <a href="https://www.proferecursos.com/que-es-el-amoniaco/" target="_blank" rel="noopener">https://www.proferecursos.com/que-es-el-amoniaco/</a>
+                </li>
+                <li>
+                    <em>Amoniaco: información completa, definición, ejemplos y más</em>. (s.f.). Conceptos.es. 
+                    <a href="https://conceptos.es/amoniaco" target="_blank" rel="noopener">https://conceptos.es/amoniaco</a>
+                </li>
+                <li>
+                    Aprendix. (2025, 4 septiembre). <em>Qué es el amoniaco y cuáles son sus principales usos y definiciones</em>. Aprende En Casa. 
+                    <a href="https://aprendix.org/que-es-el-amoniaco/" target="_blank" rel="noopener">https://aprendix.org/que-es-el-amoniaco/</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p><strong>Universidad Técnica Particular de Loja</strong></p>
+                <p>Facultad de Ciencias Exactas y Naturales</p>
+                <p>Carrera de Ingeniería Química</p>
+                <p>Asignatura: Introducción a la Ingeniería Química</p>
+                <p>Docente: Diego Maza Estrada</p>
+            </div>
+            <div class="footer-authors">
+                <p>Integrantes: Ali Panamito, Jennifer Sarango, Ariana Peña, Ariel Parra</p>
+                <p>11 de enero de 2026 • Loja, Ecuador</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Función para mostrar/ocultar contenido de procesos
+        function toggleProceso(procesoId) {
+            const content = document.getElementById(procesoId);
+            const toggleBtn = document.getElementById('toggle' + procesoId.replace('proceso', ''));
+            
+            if (content.classList.contains('active')) {
+                content.classList.remove('active');
+                toggleBtn.textContent = '+';
+            } else {
+                // Cerrar todos los otros procesos
+                document.querySelectorAll('.proceso-content').forEach(p => {
+                    p.classList.remove('active');
+                });
+                document.querySelectorAll('.toggle-btn').forEach(btn => {
+                    btn.textContent = '+';
+                });
+                
+                // Abrir el seleccionado
+                content.classList.add('active');
+                toggleBtn.textContent = '−';
+            }
+        }
+
+        // Smooth scroll con offset para el header fijo
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                
+                if (targetSection) {
+                    const offsetTop = targetSection.offsetTop - 100;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Efecto de animación al hacer scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(30px)';
+            section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(section);
+        });
+
+        // Resaltar enlace activo en la navegación
+        window.addEventListener('scroll', () => {
+            let current = '';
+            document.querySelectorAll('section').forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('nav a').forEach(link => {
+                link.style.color = '';
+                link.style.fontWeight = '';
+                if (link.getAttribute('href') === '#' + current) {
+                    link.style.color = 'var(--azul-petroleo)';
+                    link.style.fontWeight = '600';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
